@@ -74,7 +74,7 @@ def main():
         st.table(top_keywords_table)
         
         # 指定中文字体路径
-        font_path = "C:/Windows/Fonts/simhei.ttf"  # 请根据实际情况修改字体路径
+        font_path = "simhei.ttf"  # 请根据实际情况修改字体路径
         st.subheader('Word Cloud')
         wordcloud_fig = generate_wordcloud(top_keywords_cloud, font_path)
         st.pyplot(wordcloud_fig)
